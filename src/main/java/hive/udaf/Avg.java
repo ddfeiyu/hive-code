@@ -4,6 +4,12 @@ import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
 /**
  * 功能描述: UDAF
+ *
+ * 什么是UDAF :用户定义聚集函数（user-defined aggregate function）
+ *
+ * UDAF干什么？ UDAF 接受多个输入数据行，并产生一个输出数据行。像COUNT和MAX这样的函数就是聚集函数。
+ *
+ *
  * 函数类需要继承UDAF类，计算类Evaluator实现UDAFEvaluator接口
  * Evaluator需要实现UDAFEvaluator的init、iterate、terminatePartial、merge、terminate这几个函数。
      * a）init函数实现接口UDAFEvaluator的init函数。

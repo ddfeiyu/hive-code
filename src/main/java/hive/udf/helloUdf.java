@@ -10,6 +10,11 @@ import java.text.ParseException;
 /**
  * 功能描述  :UDF函数编写
  *
+ * 什么是UDF： 用户定义函数(user-defined function)
+ *
+ * UDF干什么？ UDF操作作用于单个数据行，并且产生一个数据行作为输出。大多数函数都属于这一类（比如数学函数和字符串函数）。
+ *
+ *
  * 1、UDF函数自定义主要是继承hive-exec中UDF这个类，重写evaluate方法实现UDF自定义。
  * 2、临时函数的使用 ： 进入hive的交互shell中
          * 1. 创建存放jar的目录
